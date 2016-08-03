@@ -1,0 +1,406 @@
+@charset "utf-8";
+.main{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    padding: 0 6%;
+}
+img{
+    width: 100%;
+}
+.back1{
+    background: url("../images/back.png");
+    background-size: cover;
+}
+.back2{
+    background: url("../images/back2.jpg");
+    background-size: cover;
+}
+.back3{
+    background: url("../images/back1.jpg");
+    background-size: cover;
+}
+.back4{
+    background: url("../images/back3.png");
+    background-size: cover;
+}
+canvas{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    margin: auto;
+    background: transparent;
+}
+.canvas-box{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    overflow: hidden;
+}
+.game-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: RGBa(0,53,87,.73);
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    cursor: default;
+    display: none;
+    z-index: 5;
+    text-align: center;
+}
+/*.game-over span {
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    left: 50px;
+}*/
+.game-over span:hover {
+    /*color: #FFD700;*/
+}
+.score {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: 900;
+    font-family: Helvetica, sans-serif;
+    cursor: default;
+    z-index: 2;
+    width: 9rem;
+}
+.rulai{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../images/rulai.png");
+    background-size: cover;
+}
+.levelup{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    z-index: 99;
+    overflow: hidden;
+    text-align: center;
+}
+.btmtree{
+    left: 0;
+    right: 0;
+    position: absolute;
+    bottom: 0;
+}
+.rocks{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: url("../images/rocks.png");
+    background-size: 100% auto;
+}
+.duanwu{
+    position: relative;
+    z-index: 1;
+}
+.moveBlock{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.levels{
+    overflow: hidden;
+}
+.level1s{
+    background: url("../images/levels.jpg");
+    background-size: 100% auto;
+}
+.level2s{
+    background: url("../images/levels2.jpg");
+    background-size: 100% auto;
+}
+.level3s{
+    background: url("../images/levels3.jpg");
+    background-size: 100% auto;
+}
+
+.btmgrass{
+    position: absolute;
+    height: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.btmimg{
+    position: absolute;
+    width: 80%;
+    height: auto;
+    bottom: -3%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+}
+.level-ccbox{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 60%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+.level-cc{
+    width: 23%;
+    height: 40%;
+    float: left;
+    padding: 0 5%;
+}
+.level-confirm{
+    position: absolute;
+    width: 100%;
+    height: 63%;
+    bottom: 0;
+    z-index: 999;
+}
+.circle{
+    width: 100%;
+    margin-top: -20%;
+    position: relative;
+}
+.paper{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.mon{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 6%;
+    -webkit-animation: fly 2s ease-in-out infinite alternate;
+    -o-animation: fly 2s ease-in-out infinite alternate;
+    animation: fly 2s ease-in-out infinite alternate;
+    z-index: 1;
+}
+.mon>img{
+    z-index: 1;
+}
+@keyframes fly {
+    0% {transform: translate(0,0)}
+    100%{transform: translate(-15px,-10px)}
+}
+@-webkit-keyframes fly {
+    0% {-webkit-transform: translate(0,0)}
+    100%{-webkit-transform: translate(-15px,-10px)}
+}
+.moncloud{
+    z-index: 3;
+}
+.zongz{
+    position: absolute;
+    -webkit-animation: font_1_on 3s linear infinite;
+    -o-animation: font_1_on 3s linear infinite;
+    animation: font_1_on 3s linear infinite;
+    transform-origin: center bottom;
+    -webkit-transform-origin: center bottom;
+    -moz-transform-origin: center bottom;
+}
+@keyframes font_1_on {
+    0% {transform: scale(1,1)}
+    18%{transform: scale(1,1)}
+    20%{transform: scale(1,1.2)}
+    22%{transform: scale(1,1)}
+    100%{transform: scale(1,1)}
+}
+@-webkit-keyframes font_1_on {
+    0% {-webkit-transform: scale(1,1)}
+    18%{-webkit-transform: scale(1,1)}
+    20%{-webkit-transform: scale(1,1.2)}
+    22%{-webkit-transform: scale(1,1)}
+    100%{-webkit-transform: scale(1,1)}
+}
+.zongz1{
+    width: 11%;
+    top: 48%;
+    left: 34%;
+    z-index: 1;
+}
+.zongz2{
+    width: 9%;
+    top: 50%;
+    left: 53%;
+    z-index: 2;
+    -webkit-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
+}
+.zongz3{
+    width: 9%;
+    top: 50%;
+    left: 42%;
+    -webkit-animation-delay: 2.4s;
+    -moz-animation-delay: 2.4s;
+    -o-animation-delay: 2.4s;
+    animation-delay: 2.4s;
+}
+.zongz4{
+    width: 7%;
+    top: 54%;
+    left: 60%;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
+}
+.showMon{
+    position: absolute;
+    height: 95%;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+.circle{
+    -webkit-animation: scales infinite 1s ease-in-out alternate;
+    -moz-animation: scales infinite 1s ease-in-out alternate;
+    -o-animation: scales infinite 1s ease-in-out alternate;
+    animation: scales infinite 1s ease-in-out alternate;
+}
+@keyframes circles {
+    0% {transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+@-webkit-keyframes circles {
+    0% {-webkit-transform: rotate(0deg)}
+    100%{-webkit-transform: rotate(360deg)}
+}
+@keyframes scales {
+    0% {transform: scale(.95)}
+    100%{transform: scale(1)}
+}
+@-webkit-keyframes scales {
+    0% {-webkit-transform: scale(.95)}
+    100%{-webkit-transform: scale(1)}
+}
+.lz{
+    position: absolute;
+    width: 25%;
+    top: 0;
+    right: 15%;
+    z-index: -1;
+    /*-webkit-animation: ritop ease 1s;
+    -o-animation: ritop ease 1s;
+    animation: ritop ease 1s;*/
+    /*animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;*/
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+@keyframes ritop {
+    0% {transform: translate(-15px,-10px)}
+    100%{transform: translate(0,0)}
+}
+@-webkit-keyframes ritop {
+    0% {-webkit-transform: translate(-15px,-10px)}
+    100%{-webkit-transform: translate(0,0)}
+}
+.enter{
+    width: 35%;
+    height: auto;
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    position: absolute;
+    z-index: 3;
+}
+.enter>img{
+    width: 100%;
+}
+.years{
+    position: absolute;
+    width: 30%;
+    top: 30%;
+    left: 5%;
+}
+.wid66{
+    width: 66px;
+}
+.panguan{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.icon-score{
+    display: inline-block;
+    vertical-align: baseline;
+    position: relative;
+    top: 6px;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    background: url("../images/score.png");
+    background-size: cover;
+}
+.icon-restart{
+    display: inline-block;
+    width: 9rem;
+    height: 3rem;
+    background: url("../images/restart.png");
+    background-size: cover;
+}
+.game-all{
+    width: 16rem;
+    height: auto;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.ga-btn{
+    position: absolute;
+    bottom: -4%;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.levelup .ga-btn{
+    bottom: 10%;
+}
+#over-score{
+    color: #00b0ff;
+    font-size: 50px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 25%;
+    margin: auto;
+    font-weight: 900;
+    text-shadow: 0 0 4px #ffffff;
+    text-align: center;
+    font-family: "Arial";
+}
